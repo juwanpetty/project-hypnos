@@ -1,5 +1,6 @@
 import Actions from 'views/Actions/Actions';
 import Collections from 'views/Collections/Collections';
+import Settings from 'views/Settings/Settings';
 
 import { Tab } from '@headlessui/react';
 import {
@@ -18,7 +19,9 @@ export default function Index() {
         <Tab.Panel>
           <Collections />
         </Tab.Panel>
-        <Tab.Panel>Content 3</Tab.Panel>
+        <Tab.Panel>
+          <Settings />
+        </Tab.Panel>
       </Tab.Panels>
 
       <Tab.List className="flex h-14 items-center justify-around border-t border-neutral-200">
