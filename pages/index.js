@@ -1,4 +1,5 @@
 import Actions from 'views/Actions/Actions';
+import Collections from 'views/Collections/Collections';
 
 import { Tab } from '@headlessui/react';
 import {
@@ -14,7 +15,9 @@ export default function Index() {
         <Tab.Panel>
           <Actions />
         </Tab.Panel>
-        <Tab.Panel>Content 2</Tab.Panel>
+        <Tab.Panel>
+          <Collections />
+        </Tab.Panel>
         <Tab.Panel>Content 3</Tab.Panel>
       </Tab.Panels>
 
