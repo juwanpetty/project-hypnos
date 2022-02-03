@@ -1,7 +1,7 @@
-import { ChevronRightIcon, CalendarIcon } from '@heroicons/react/solid';
+import { ChevronRightIcon } from '@heroicons/react/solid';
 import TimeMetric from 'components/TimeMetric';
 
-const ActionItem = ({ title, time, noAction }) => {
+const ActionItem = ({ title, time, icon, noAction }) => {
   let xMarkup = null;
 
   if (time) {
@@ -22,12 +22,7 @@ const ActionItem = ({ title, time, noAction }) => {
   return (
     <div className="mx-2 flex h-10 cursor-pointer items-center justify-between rounded-md p-2 hover:bg-neutral-100">
       <div className="flex items-center">
-        <div className="flex items-center">
-          <CalendarIcon
-            className="mr-2 h-5 w-5 text-neutral-700"
-            aria-hidden="true"
-          />
-        </div>
+        <div className="flex items-center">{icon}</div>
         <h3 className="text-sm font-medium  text-neutral-700">{title}</h3>
       </div>
       {xMarkup}
