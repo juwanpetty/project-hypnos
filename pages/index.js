@@ -1,3 +1,5 @@
+import Actions from 'views/Actions/Actions';
+
 import { Tab } from '@headlessui/react';
 import {
   AdjustmentsIcon,
@@ -9,7 +11,9 @@ export default function Index() {
   return (
     <Tab.Group as="div" className="w-80 rounded-lg bg-white shadow-xl">
       <Tab.Panels>
-        <Tab.Panel>Content 1</Tab.Panel>
+        <Tab.Panel>
+          <Actions />
+        </Tab.Panel>
         <Tab.Panel>Content 2</Tab.Panel>
         <Tab.Panel>Content 3</Tab.Panel>
       </Tab.Panels>
