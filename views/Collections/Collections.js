@@ -18,7 +18,7 @@ const Collections = () => {
             />
           </div>
           <input
-            type="search"
+            type="text"
             name="search"
             id="search"
             className="block w-full rounded-md border border-neutral-100 bg-neutral-100 py-2 pl-10 pr-2 text-sm placeholder:text-neutral-500 focus:border-blue-500 focus:ring-blue-500"
