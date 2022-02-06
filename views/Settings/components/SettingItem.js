@@ -1,8 +1,10 @@
-import { ChevronRightIcon } from "@heroicons/react/solid";
+import { ChevronRightIcon } from '@heroicons/react/solid';
 
-const SettingItem = ({ title }) => {
+const SettingItem = ({ title, value, setSubPage }) => {
   return (
-    <div className="mx-2 flex h-10 cursor-pointer items-center justify-between rounded-md p-2 hover:bg-neutral-100">
+    <div
+      className="mx-2 flex h-10 cursor-pointer items-center justify-between rounded-md p-2 hover:bg-neutral-100"
+      onClick={() => setSubPage(value)}>
       <h3 className="text-sm font-medium  text-neutral-700">{title}</h3>
       <div className="flex items-center">
         <ChevronRightIcon
